@@ -1,0 +1,44 @@
+@import "../helpers/_variables.scss";
+@import "../modules/mixines.scss";
+
+.carousel .control-dots {
+    left: 0;
+    width: $P20 !important;
+    padding: 20px 0px !important;
+}
+
+.carousel .control-dots .dot {
+    background: $black !important;
+    box-shadow: none !important;
+    background-color: $black;
+}
+
+.carousel .slide img {
+    width: $P70 !important;
+}
+
+.slider {
+    height: $V80;
+    background-color: $silver;
+
+    .flex {
+        width: $P80;
+        margin: auto;
+
+
+
+        div:first-child {
+            text-align: left;
+            margin: auto;
+
+            p {
+                margin: $P5 $P0;
+                width: $P80;
+            }
+
+            a {
+                @include typoCta ($Ssize, $regular, $white, $ctasize, #181818, center, $radius);
+            }
+        }
+    }
+}

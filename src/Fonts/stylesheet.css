@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Black.eot');
+    src: local('Circular Std Black'), local('CircularStd-Black'),
+        url('CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Black.woff2') format('woff2'),
+        url('CircularStd-Black.woff') format('woff'),
+        url('CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Bold.eot');
+    src: local('Circular Std Bold'), local('CircularStd-Bold'),
+        url('CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Bold.woff2') format('woff2'),
+        url('CircularStd-Bold.woff') format('woff'),
+        url('CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Black';
+    font-weight: bold;
+    src: url('ProximaNova-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    font-weight: bold;
+    src: url('ProximaNova-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNova-Extrabold';
+    font-weight: bold;
+    src: url('ProximaNova-Extrabold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    font-weight: normal;
+    src: url('ProximaNova-Light.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    font-weight: normal;
+    src: url('ProximaNova-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNova-Thin';
+    font-weight: lighter;
+    src: url('ProximaNova-Thin.otf') format("opentype");
+}

@@ -1,0 +1,61 @@
+@import "../helpers/_variables.scss";
+@import "../modules/mixines.scss";
+
+#promote {
+    background-color: $white;
+    margin: $P05 $P0;
+
+    .promote-card {
+        position: relative;
+        overflow: hidden;
+        background-color: $silver;
+        text-align: center;
+        margin: $P1;
+        padding: $P2;
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        -o-border-radius: $radius;
+        height: $V90;
+
+        .promote-img1,
+        .promote-img2 {
+            width: $P60;
+        }
+
+        .promote-img2 {
+            margin-top: 15%;
+        }
+
+        h2 {
+            width: $P50;
+            margin: $P1 auto $P5 auto;
+        }
+
+        a {
+            margin-bottom: $P5;
+            @include typoCta ($Ssize, $regular, $white, $ctasize, #181818, center, $radius);
+        }
+    }
+
+    .promote-full {
+        margin-top: $P05;
+        width: $P100;
+        background-color: $silver;
+
+        .flex {
+            width: $P80;
+            height: $V80;
+            margin: auto;
+
+            p {
+                margin: $P2 $P0;
+            }
+
+            a {
+                @include typoCta ($Ssize, $regular, $white, $ctasize, #181818, center, $radius);
+            }
+        }
+    }
+}

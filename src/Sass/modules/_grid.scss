@@ -1,0 +1,57 @@
+@import "../helpers/variables.scss";
+
+.conteneur {
+    width: $conteneur;
+    margin: auto;
+    display: block;
+}
+
+.flex {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-space {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$i : 1;
+$nombreCol: 12;
+$margin : 2%;
+
+@for $i from 1 through $nombreCol {
+    $width: percentage($i / $nombreCol);
+
+    .col-#{$i} {
+        width: $width - $margin;
+        @extend .col-responsive;
+    }
+}
+
+.col-responsive {
+    @media screen and (min-width: $mobile) and (max-width: $tablette) {
+        width: 100%;
+        margin: 2% 0%;
+
+        &:last-child {
+            margin-bottom: 0%;
+        }
+    }
+}

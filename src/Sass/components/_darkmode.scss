@@ -1,0 +1,119 @@
+@import "../helpers/_variables.scss";
+
+#DarkMode {
+    position: fixed;
+    bottom: $P2;
+    right: $P2;
+    z-index: 999;
+    background-color: $black;
+    padding: $P05;
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+
+    img {
+        width: 25px;
+        height: auto;
+    }
+}
+
+
+body.dark-mode {
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    background-color: $dark-grey !important;
+
+    .slider,
+    #promote .promote-card,
+    .promote-full,
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6 {
+        background-color: $dark-grey !important;
+    }
+
+    .carousel .control-dots .dot {
+        background: $white !important;
+        box-shadow: none !important;
+        background-color: $black;
+    }
+
+    .faq-row-wrapper {
+        background-color: $dark-grey;
+
+        h2,
+        .row-title-text,
+        .row-content-text {
+            color: $white
+        }
+
+        svg {
+            fill: $white !important;
+        }
+    }
+
+    .form-global {
+        background-color: $dark-grey;
+        border: 1px solid $off-white;
+
+        h1 {
+            color: $white;
+        }
+
+        .form-group {
+            label {
+                color: $white;
+            }
+
+            input {
+                border: 1px solid $white;
+            }
+        }
+    }
+
+    .form-btn button,
+    .form-btn a {
+        border: 1px solid #181818;
+    }
+
+    header {
+        background-color: $dark-dark;
+
+        nav,
+        ul,
+        li,
+        a {
+            color: $white
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+        color: $white;
+    }
+
+    p,
+    span {
+        color: $off-white !important;
+    }
+
+    button {
+        border: .1px solid $white;
+    }
+
+    #DarkMode {
+        background-color: $white;
+    }
+}

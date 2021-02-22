@@ -1,0 +1,75 @@
+@import "../helpers/variables.scss";
+
+/* 
+-------------------------------------------------------
+            Fichier regroupant les mixins
+-------------------------------------------------------
+
+    1. Typographies
+    2. Background-Image
+
+*/
+
+// 1. Typographies
+@mixin typoTitre($s, $w, $c) {
+    font-family: 'Circular Std';
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}
+
+@mixin typoTexte($s, $w, $c, $l) {
+    font-family: 'ProximaNova-Regular';
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+    line-height: $l;
+}
+
+@mixin typoCta($s, $w, $c, $p, $bcc, $ta, $br) {
+    font-family: 'ProximaNova-Regular';
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+    padding: $p;
+    background-color: $bcc;
+    text-align: $ta;
+    border-radius: $br;
+    -webkit-border-radius: $br;
+    -moz-border-radius: $br;
+    -ms-border-radius: $br;
+    -o-border-radius: $br;
+    display: inline-block;
+}
+
+// 2. Background-Image
+@mixin background($bi, $bs, $bp, $h) {
+    background-image: url($bi);
+    background-size: $bs;
+    background-position: $bp;
+    background-repeat: no-repeat;
+    height: $h;
+}
+
+.effect-up {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+
+    &:hover {
+        box-shadow: $mediumshadow;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+}

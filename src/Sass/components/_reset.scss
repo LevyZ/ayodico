@@ -1,0 +1,75 @@
+@import "../helpers/_variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*|*:-moz-any-link {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+*|*:any-link {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+a,
+button {
+    cursor: pointer !important;
+    border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #f8f8f8;
+}
+
+main{
+    padding-top: $V10;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

@@ -1,0 +1,12 @@
+@import "../helpers/_variables.scss";
+@import "../modules/mixines.scss";
+
+#result {
+
+  h3 {
+    @include typoTitre ($XLsize, $bold, $dark-dark);
+    margin-bottom: $V5;
+    text-align: center;
+  }
+
+}

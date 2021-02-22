@@ -1,0 +1,54 @@
+@import "../helpers/_variables.scss";
+@import "../modules/mixines.scss";
+
+.form-global {
+    width: $P50;
+    margin: auto;
+    margin-top: $V15;
+    background-color: $light-white;
+    padding: $P5;
+    border: 1px solid $black;
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+
+    h1 {
+        @include typoTitre ($XLsize, $bold, $dark-dark);
+        margin-bottom: $V5;
+        text-align: center;
+    }
+
+    .form-group {
+        label {
+            @include typoTitre ($Msize, $bold, $dark-dark);
+            margin-bottom: $P05;
+            display: block;
+        }
+
+        input {
+            @include typoTexte($XSsize, $bold, $black, auto);
+            background-color: $light-white;
+            display: block;
+            width: $P100;
+            padding: $P2;
+            text-align: left;
+            border: 1px solid $black;
+            border-radius: $radius / 2;
+            -webkit-border-radius: $radius / 2;
+            -moz-border-radius: $radius / 2;
+            -ms-border-radius: $radius / 2;
+            -o-border-radius: $radius / 2;
+            margin-bottom: $V2;
+        }
+    }
+}
+
+
+.form-btn button,
+.form-btn a {
+    @include typoCta ($Ssize, $regular, $white, $ctasize, #181818, center, $radius);
+    margin-right: $V2;
+    line-height: normal !important;
+}
