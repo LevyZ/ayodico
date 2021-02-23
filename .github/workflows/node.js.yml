@@ -28,3 +28,4 @@ jobs:
     - run: yarn
     - run: CI='' yarn build
     - run: CI='' yarn start
+    
